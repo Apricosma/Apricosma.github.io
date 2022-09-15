@@ -1,0 +1,11 @@
+@import "./reset.css";
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;    
+}
+
+body {
+    background: #fff url("../media/rat-spinning.gif") center center / 
+    cover no-repeat fixed;
+}
