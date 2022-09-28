@@ -1,0 +1,191 @@
+@import "./reset.css";
+
+:root {
+    --app-pink: #f79cb4;
+    --app-text-color: #f2f4f6;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+  }
+
+body {
+    background-color: #1B1B1B;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Hero & Header                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+.hero-img {
+    min-height: 5vh;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../media/herobg.jpg"); 
+    background-size: auto;
+    background-position: center center;
+    box-shadow: 1px 1px 50px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 70px;
+}
+
+.logo:hover {
+    width: 60px;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: rgba(20, 11, 20, 0.8);
+    box-shadow: 0px 2px 45px 1px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 12px;
+    font-size: 18px;
+    color: var(--app-pink);
+}
+
+nav ul li a:hover {
+    color: #9cf7df;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 25px #9cf7df;
+}
+
+nav button {
+    padding: 7px;
+    margin: 10px 0px;
+    background-color: var(--app-pink);
+    box-shadow: inset 1px 1px 10px 1px #C33D9E, 1px .5px 15px 2px #C33D9E;
+    border-radius: 7px;
+    width: 8rem;
+    height: 3rem;
+    color: #030303;
+    font-size: 18px;
+}
+
+nav button:hover {
+    background-color: #a8deeb;
+    box-shadow: inset 1px 1px 10px 1px #a8deeb, 1px .5px 15px 1px #a8deeb;
+    color: #000;
+}
+
+.hamburger {
+    display:none;
+    font-size: 45px;
+    text-decoration: none;
+    color: var(--app-pink);
+}
+
+/* .hamburger:hover {
+    color: #9cf7df;
+} */
+/* idk why this isn't working */
+
+@media (max-width: 936px) {
+    .navlist, .contact-button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Section 1                                    */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+#section-1 {
+    min-height: calc(100vh - 68px - 150px);
+    text-align: center;
+
+}
+
+section div > div {
+    background-color: #302D30;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    box-shadow: 2px 5px 25px 0 rgb(19, 19, 19);
+}
+
+section h2 {
+    color: var(--app-text-color);
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.fa-github {
+    font-size: 100px;
+    color: var(--app-text-color);
+    padding: 15px 0 50px;
+}
+
+.fa-github:hover {
+    color: var(--app-pink);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Footer                                       */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+    height: 150px;
+    background-color: #0f0f0f;
+    color: var(--app-text-color);
+}
+
+footer p {
+    margin-top: 50px;
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    color: var(--app-text-color);
+    margin: 15px 0;
+    font-size: 25px;
+}
+
+
+.copyright {
+    font-weight: 300;
+}
+
+footer .fa-brands {
+    font-size: 30px;
+}
+
+footer .fa-brands:hover {
+    color: var(--app-pink);
+}
