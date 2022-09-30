@@ -115,7 +115,9 @@ nav button:hover {
     }
 }
 
-/* glass */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Funny glass                                  */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
 
 .frost-glass {
     width: min(100% - 1080px, 1080);
@@ -254,6 +256,51 @@ a p:last-of-type:hover {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Section 2                                   */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+#section-2 {
+    min-height: calc(100vh - 68px - 150px);
+    text-align: center;
+    background-color: #252525;
+}
+
+#section-2 div {
+    padding-top: 150px;
+}
+
+#section-2 button {
+    padding: 7px;
+    background-color: var(--app-pink);
+    box-shadow: inset 1px 1px 10px 1px #C33D9E, 1px .5px 15px 2px #C33D9E;
+    border-radius: 7px;
+    width: 12rem;
+    height: 4rem;
+    color: #030303;
+    font-size: 28px;
+    justify-content: center;
+}
+
+#section-2 button:hover {
+    background-color: #a8deeb;
+    box-shadow: inset 1px 1px 10px 1px #a8deeb, 1px .5px 15px 1px #a8deeb;
+    color: #000;
+}
+
+#section-2 p {
+    color: var(--app-text-color);
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+@media (max-width: 936px) {
+    #section-2 {
+        margin-top: 600px;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Footer                                       */
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -277,6 +324,11 @@ footer li a {
     font-size: 25px;
 }
 
+footer i {
+    padding-top: 65px;
+    padding-right: 10px;
+}
+
 
 .copyright {
     font-weight: 300;
@@ -292,6 +344,6 @@ footer .fa-brands:hover {
 
 @media (max-width: 936px) {
     footer {
-        margin-top: 750px;
+        margin-top: 0px;
     }
 }

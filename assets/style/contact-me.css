@@ -131,7 +131,7 @@ h1 {
 
 .form-box {
     margin-inline: auto;
-    /* margin-top: 150px; */
+    margin-top: 25px;
     width: 500px;
     background-color: #302D30;
     border-radius: 7px;
@@ -261,6 +261,10 @@ footer li a {
     font-size: 25px;
 }
 
+footer i {
+    padding-top: 65px;
+    padding-right: 10px;
+}
 
 .copyright {
     font-weight: 300;

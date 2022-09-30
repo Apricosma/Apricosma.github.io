@@ -112,6 +112,8 @@ nav button:hover {
         display: block;
 
     }
+
+    
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */
@@ -177,6 +179,10 @@ footer li a {
     font-size: 25px;
 }
 
+footer i {
+    padding-top: 65px;
+    padding-right: 10px;
+}
 
 .copyright {
     font-weight: 300;
