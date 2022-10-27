@@ -42,9 +42,9 @@ onEvent('click', calcButton, function() {
     let num = inputTemperature.value;
 
     if (isNumber(num)) {
-        if (selectFahrenheit.checked) {
+        if (selectCelsius.checked) {
             resultOutput.innerText = `${toCelsius((num)).toFixed(2)}° Celsius`;
-        } else if (selectCelsius.checked) {
+        } else if (selectFahrenheit.checked) {
             resultOutput.innerText = `${toFahrenheit((num)).toFixed(2)}° Fahrenheit`;
         } else {
             resultOutput.innerText = `Select unit conversion`
