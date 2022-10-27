@@ -3,8 +3,11 @@
 :root {
     --app-pink: #f79cb4;
     --app-text-color: #f2f4f6;
+    --app-box-color: #444444;
+    --app-bg-color: #1B1B1B;
+    --app-light-bg-color: #f4f4f5;
+    --app-light-box-color: #fcfcfc;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -18,6 +21,7 @@ html {
 body {
     background-color: #1B1B1B;
 }
+
 
 a {
     text-decoration: none;
@@ -40,9 +44,9 @@ a {
     margin-right: 70px;
 }
 
-.logo:hover {
+/* .logo:hover {
     width: 60px;
-}
+} */
 
 .flexbox {
     display: flex;
@@ -63,7 +67,7 @@ nav ul li {
 nav ul li a {
     padding: 12px;
     font-size: 18px;
-    color: var(--app-pink);
+    color: #f79CB4;
 }
 
 nav ul li a:hover {
@@ -73,7 +77,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 25px #9cf7df;
 }
 
-nav button {
+nav button, .mode-toggle {
     padding: 7px;
     margin: 10px 0px;
     background-color: var(--app-pink);
@@ -112,47 +116,131 @@ nav button:hover {
         display: block;
 
     }
-
-    
 }
-
-/* - - - - - - - - - - - - - - - - - - - - - - - */
-/*  Section 1                                    */
-/* - - - - - - - - - - - - - - - - - - - - - - - */
 
 #section-1 {
-    min-height: calc(100vh - 68px - 150px);
-    text-align: center;
-
+    min-height: calc(100vh - 68px - 50px);
 }
 
-section div > div {
-    background-color: #302D30;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 7px;
-    box-shadow: 2px 5px 25px 0 rgb(19, 19, 19);
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Radio                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+input[type="radio"]{
+    -webkit-appearance: radio;
 }
 
-section h2 {
+.radio {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  General style                                */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+.calculator {
+    margin: 50px 0;
+    background-color: #2e2e2e;
+    box-shadow: 2px 3px 15px rgba(8, 8, 8, 0.582);
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px;
+}
+
+.calculator, input {
     color: var(--app-text-color);
-    text-align: center;
-    font-size: 38px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 150px;
-    padding: 20px;
 }
 
-.fa-github {
-    font-size: 100px;
+h3:first-of-type {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+
+input[type="text"] {
+    background-color: var(--app-box-color);
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* I can't for the life of me get this properly aligned with the form */
+.calculate {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: var(--app-pink);
+}
+
+.output {
+    width: 200px;
+    height: 40px;
+    background-color: var(--app-box-color);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.mode-toggle {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+}
+
+.flashbang {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 80px;
+    margin-right: 25px;
     color: var(--app-text-color);
-    padding: 15px 0 50px;
 }
 
-.fa-github:hover {
-    color: var(--app-pink);
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Light-mode styling                           */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+.light-mode {
+    background: var(--app-light-bg-color);
+}
+
+.light-mode input[type="text"], .light-mode .output {
+    background-color: var(--app-light-box-color);
+    color: #000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(121, 121, 121, 0.61);
+    box-shadow: 2px 4px 10px #c2c2c2;
+}
+
+.light-mode p, .light-mode h3 {
+    color: #000;
+}
+
+.light-mode .calculator {
+    background-color: #f3f3f3;
+    box-shadow: 2px 4px 10px #adacac;
+}
+
+.light-mode .hero-img {
+    box-shadow: 0px 0px 0px;
+}
+
+.light-mode .mode-toggle {
+    background-color: #a8deeb;
+    box-shadow: inset 1px 1px 10px 1px #a8deeb, 1px .5px 15px 1px #a8deeb;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - */

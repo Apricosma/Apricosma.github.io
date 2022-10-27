@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/style/projects.css">
+    <script src="assets/script/projects-temperature.js" defer></script>
 </head>
 <body>
     <main>
@@ -33,12 +34,39 @@
         </div>
 
         <section id="section-1">
-            <div class="container">
+            <!-- <div class="container">
                 <div>
-                    <!-- <img src="assets/media/ghost.png" alt="Ghost" class="ghost"> -->
                     <h2>Github</h2>
                     <a href="https://github.com/Apricosma" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
+            </div> -->
+
+
+        <div class="container">
+            <div class="calculator">
+                <h3>Input temperature (F/C)</h3>
+                <div class="form-div">
+                    <form>
+                        <input type="text" class="temperature-input" placeholder="...degrees">
+                        <button type="button" class="calculate">Calculate!</button>
+                    </form>
+                </div>
+
+                <form class="radio">
+                    <p>Convert to:<p>
+                    <input type="radio" id="fahrenheit" value="fahrenheit" name="temperature">
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <input type="radio" id="celsius" value="celsius" name="temperature">
+                    <label for="celsius">Celsius</label>
+                </form>
+                <p>Result</p>
+                <div class="output"></div>
+
+
+            </div>
+            <div class="flashbang">
+            <p>Flashbang warning</p>
+            <button type="button" class="mode-toggle">Dark/Light</button>
             </div>
         </section>
 
